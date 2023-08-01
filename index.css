@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: "Belanosima", sans-serif; */
+  font-family: "Overpass", sans-serif;
+  width: 1440px;
+  /* min-height: 100vh; */
+  background: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+  gap: 30px;
+}
+.container1 {
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: center;
+  gap: 30px;
+}
+.img {
+  padding: 15px;
+  background-color: hsl(216, 12%, 54%);
+  border-radius: 50%;
+}
+p {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+}
+.parent-number {
+  width: 100%;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 30px; */
+  color: hsl(217, 12%, 63%);
+  width: 100%;
+}
+ul .btn {
+  background-color: hsl(216, 12%, 54%, 0.5);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+}
+ul .btn:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.btn-submit {
+  background-color: hsl(25, 97%, 53%);
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 40px;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 3px;
+}
+.thank {
+  width: 100%;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: hsla(216, 12%, 54%, 0.5);
+  text-align: center;
+  color: hsl(25, 97%, 53%);
+  font-weight: 700;
+}
+.btn-submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
