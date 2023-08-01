@@ -4,10 +4,9 @@
   box-sizing: border-box;
 }
 body {
-  /* font-family: "Belanosima", sans-serif; */
   font-family: "Overpass", sans-serif;
   width: 1440px;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   background: hsl(216, 12%, 8%);
   color: hsl(0, 0%, 100%);
 }
@@ -23,13 +22,28 @@ body {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   align-items: flex-start;
   gap: 30px;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  ul {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  ul .btn {
+    width: 40px;
+    height: 40px;
+  }
+  .btn-submit {
+    letter-spacing: normal;
+    font-size: 12px;
+  }
+}
 .container1 {
   flex-direction: column;
-  /* justify-content: flex-start; */
   align-items: center;
   gap: 30px;
 }
