@@ -41,6 +41,10 @@ body {
     letter-spacing: normal;
     font-size: 12px;
   }
+  .thank {
+    /* font-size: 12px; */
+    border-radius: 20px;
+  }
 }
 .container1 {
   flex-direction: column;
