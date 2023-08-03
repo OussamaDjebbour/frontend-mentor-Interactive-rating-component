@@ -5,17 +5,18 @@
 }
 body {
   font-family: "Overpass", sans-serif;
-  width: 1440px;
-  min-height: 100vh;
   background: hsl(216, 12%, 8%);
   color: hsl(0, 0%, 100%);
+  width: 1440px;
+  min-height: 100vh;
+  margin: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   width: 500px;
   background-color: hsl(213, 19%, 18%);
   padding: 40px;
@@ -42,7 +43,6 @@ body {
     font-size: 12px;
   }
   .thank {
-    /* font-size: 12px; */
     border-radius: 20px;
   }
 }
@@ -68,7 +68,6 @@ ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  /* gap: 30px; */
   color: hsl(217, 12%, 63%);
   width: 100%;
 }
