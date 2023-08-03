@@ -10,13 +10,13 @@ body {
   width: 1440px;
   min-height: 100vh;
   margin: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 500px;
   background-color: hsl(213, 19%, 18%);
   padding: 40px;
