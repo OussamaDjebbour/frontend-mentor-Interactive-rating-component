@@ -72,6 +72,16 @@ ul {
   width: 100%;
 }
 ul .btn {
+  display: none;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+}
+
+span {
   background-color: hsl(216, 12%, 54%, 0.5);
   width: 50px;
   height: 50px;
@@ -81,28 +91,15 @@ ul .btn {
   justify-content: center;
   border-style: none;
 }
-ul li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-style: none;
-}
-input[type="radio"]:checked {
-  accent-color: orange;
-}
-ul .btn:checked {
-  background-color: orange;
-}
 
-ul .btn:hover {
+.btn:hover + span {
   background-color: hsl(217, 12%, 63%);
   color: hsl(0, 0%, 100%);
   cursor: pointer;
 }
-/* ul .btn label {
-  list-style-type: none;
-  list-style: none;
-} */
+.btn:checked + span {
+  background-color: orange;
+}
 
 .btn-submit {
   background-color: hsl(25, 97%, 53%);
