@@ -81,11 +81,28 @@ ul .btn {
   justify-content: center;
   border-style: none;
 }
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+}
+input[type="radio"]:checked {
+  accent-color: orange;
+}
+ul .btn:checked {
+  background-color: orange;
+}
+
 ul .btn:hover {
   background-color: hsl(217, 12%, 63%);
   color: hsl(0, 0%, 100%);
   cursor: pointer;
 }
+/* ul .btn label {
+  list-style-type: none;
+  list-style: none;
+} */
 
 .btn-submit {
   background-color: hsl(25, 97%, 53%);
