@@ -5,28 +5,25 @@ const app = function () {
   const btnsRate = document.querySelectorAll(".btn");
   const divThank = document.querySelector(".thank");
   const containerHidden = document.querySelector(".container1");
-  let rate = "";
+
+  let ratenbr = "5";
 
   const initialBtnColors = function () {
-    // btnsRate.forEach((el) => (el.checked = false));
     btnsRate[btnsRate.length - 1].checked = true;
-    rate = "5";
+    ratenbr = "5";
   };
-
-  btnsRate.forEach((el) => {
-    el.addEventListener("change", function (e) {
-      rate = e.target.value;
-      console.log(rate);
-    });
-  });
 
   const changeVisibilityContainer = function () {
     btnSubmit.closest(".container").classList.toggle("hidden");
     containerHidden.classList.toggle("hidden");
   };
 
-  btnSubmit.addEventListener("click", function () {
-    divThank.textContent = `You selected out ${rate}  of  5 Thank you!`;
+  btnSubmit.addEventListener("click", function (e) {
+    btnsRate.forEach((el) => {
+      if (!el.checked) return;
+      ratenbr = el.value;
+    });
+    divThank.textContent = `You selected out ${ratenbr}  of  5 Thank you!`;
     changeVisibilityContainer();
   });
 
